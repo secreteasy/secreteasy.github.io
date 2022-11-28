@@ -1,7 +1,7 @@
+var fso = WScript.CreateObject("Scripting.FileSystemObject");
+var f = fso.GetFile("C:\\test.txt", True);
+var txt = f.OpenAsTextStream(1,-2);
+txt.Close();
 
-
-    var fso = new ActiveXObject("Scripting.FileSystemObject");
-    var a = fso.CreateTextFile("c:\testfile.txt", true);
-    a.WriteLine("This is a test.");
-    a.Close();
- 
+s=s.replace(/\r\n/g,'1');
+WScript.Echo(s);
